@@ -2,9 +2,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("com.google.dagger.hilt.android") version "2.44"
-    id("com.google.devtools.ksp")
     kotlin("kapt")
+
 
 }
 
@@ -87,13 +86,10 @@ dependencies {
     implementation(libs.logging.interceptor)
 
 
-    implementation(libs.hilt.android)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-    annotationProcessor(libs.hilt.android.compiler)
-    annotationProcessor(libs.androidx.hilt.compiler)
 
 
 }
